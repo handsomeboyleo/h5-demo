@@ -1,0 +1,36 @@
+.c-main {
+    margin: 0 auto;
+    width: 80%;
+    height: 700px;
+}
+
+.administer-left {
+    margin-top: 20px;
+    float: left;
+    width: 20%;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.l-box {
+    font-size: 18px;
+}
+
+.l-box>ul {
+    list-style-type: none;
+}
+
+.l-box>ul>li {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.administer-right {
+    margin-top: 20px;
+    float: right;
+    height: 660px;
+    width: 70%;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px black;
+}

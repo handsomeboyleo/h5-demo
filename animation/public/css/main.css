@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d0d0d0;
+}
+
+#all {
+    font-family: "微软雅黑", "黑体";
+    width: 100%;
+}
+
+#top {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top-advertise {
+    height: 90px;
+    background-color: #fff;
+}
+
+#top .logo-box {
+    height: 90px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#top .logo {
+    height: 90px;
+    width: 90px;
+    float: left;
+}
+
+.logo>img {
+    height: 100%;
+    width: 100%;
+}
+
+.top-title {
+    height: 50px;
+    background-color: #2273c5;
+}
+
+#top .title {
+    display: flex;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#top .subtitle {
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 20px 20px -20px #000;
+    z-index: 999;
+}
+
+#top a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 黑体;
+    line-height: 50px;
+    color: white;
+}
+
+#top .top-title .title .subtitle:hover {
+    background-color: #004085;
+}
+
+#top .top-title .title .subtitle:hover ul {
+    background-color: #004085;
+    display: block;
+}
+
+#top .t-ul {
+    display: none;
+    list-style-type: none;
+    position: relative;
+    background-color: #2273c5;
+    border-bottom: 1px solid white;
+    z-index: 1000;
+}
+
+
+/*   */
+
+.top-img {
+    width: 80%;
+    height: 450px;
+    margin: 0 auto;
+}
+
+#top .banner {
+    height: 450px;
+    position: relative;
+    box-shadow: 0px 10px 10px -5px #000;
+}
+
+.img-list {
+    height: 450px;
+    list-style: none;
+    position: relative;
+    padding-left: 0px;
+}
+
+.item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    transition: all .8s;
+}
+
+#i-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .item:nth-child(1) {
+    background: url(/image/P3-P4-01.jpg) ;
+}
+
+.item:nth-child(2) {
+    background: url(/image/P31-P32-01.jpg);
+    
+}
+
+.item:nth-child(3) {
+    background: url(/image/P33-P34-01.jpg);
+    
+}
+
+.item:nth-child(4) {
+    background: url(/image/P35-P36-01.jpg);
+}
+
+.item:nth-child(5) {
+    background: url(/image/P37-P38-01.jpg);
+} */
+
+.btn {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 170px;
+    z-index: 100;
+    opacity: .5;
+    border: none;
+}
+
+#pre {
+    left: 0px;
+}
+
+#next {
+    right: 0px;
+}
+
+.item.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+
+/*   */
+
+
+/*中部 区域*/
+
+#mid {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+#mid .show {
+    width: 100%;
+    height: 326px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 5px -5px #000;
+}
+
+#mid .show .show-left {
+    width: 50%;
+    height: 326px;
+    float: left;
+}
+
+#mid .show-left .news-scroll {
+    height: 280px;
+    width: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.l-ul {
+    width: 200%;
+    list-style: none;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+#mid .l-ul li {
+    width: 50%;
+    float: left;
+}
+
+.news-scroll:hover>ul {
+    cursor: pointer;
+    animation-play-state: paused;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-480px);
+    }
+    100% {
+        transform: translateX(-480px);
+    }
+}
+
+#l-img {
+    width: 100%;
+    height: 280px;
+}
+
+#mid .show .show-right {
+    width: 50%;
+    height: 326px;
+    float: left;
+}
+
+#mid .show-right .p-box {
+    height: 25px;
+    width: auto;
+    float: left;
+    border-bottom: #2273c5 2px solid;
+    margin-bottom: 8px;
+}
+
+#mid .s-p {
+    color: #004085;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#mid .show-right>.news-box {
+    float: left;
+    height: auto;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.news-ul li {
+    list-style-type: none;
+    margin: 0 0 0 10px;
+    height: 30px;
+}
+
+.bac {
+    background: url(../image/bac.png) repeat-x 0px 14px;
+    width: 80%;
+    float: left;
+}
+
+.tim {
+    float: right;
+}
+
+.news {
+    text-decoration: none;
+    float: left;
+}
+
+#mid .mid-main {
+    width: 100%;
+    height: 450px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+
+.m-l,
+.m-r {
+    width: 50%;
+    float: left;
+    height: 407px;
+}
+
+.m-l>img {
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 288px;
+    height: 216px;
+}
+
+.m-l>p {
+    font-size: 14px;
+    text-indent: 2em;
+    padding: 0 0 10px;
+    line-height: 1.7;
+}
+
+.m-l>a {
+    float: right;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: #2373c8;
+}
+
+#mid .mid-last {
+    width: 100%;
+    height: 430px;
+    margin-top: 10px;
+    margin: 0 auto;
+    color: #5d5d5d;
+}
+
+#mid .ex-box {
+    width: 772px;
+    height: 428px;
+    margin: 0 auto;
+}
+
+.ex-ul>li {
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.ex-ul>li>a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 黑体;
+    line-height: 30px;
+    color: black;
+}
+
+.ex-ul>li>a:hover {
+    background-color: yellow;
+}
+
+.ex-box .scroll {
+    height: 350px;
+    width: 100%;
+    border: 1px solid black;
+    float: left
+}
+
+
+/*底部区域*/
+
+#bottom {
+    width: 100%;
+    height: 220px;
+    background-color: #2373c8;
+}
+
+#bottom .b-content {
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#bottom .b-content .b-l {
+    width: 60%;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.b-title {
+    width: 100px;
+    line-height: 40px;
+}
+
+.b-title>a {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.b-mess {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    color: #abcaeb;
+    line-height: 40px;
+}
+
+.b-content .b-r {
+    width: 40%;
+    float: left;
+    margin-top: 30px;
+}
+
+.weixin-title {
+    color: #fff;
+    width: 50%;
+    font-size: 17px;
+    line-height: 40px;
+}
+
+.weixin {
+    width: 88px;
+    height: 88px;
+    background-color: #000;
+    float: left;
+}
+
+.related,
+.related>a {
+    width: 50%;
+    float: right;
+    line-height: 40px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.related>.admin {
+    float: right;
+}
+
+.admin>li {
+    float: left;
+}
+
+.admin>a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
